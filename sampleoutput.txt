@@ -1,0 +1,157 @@
+MSI Protocol
+
+Intitial Data in memory:[  Apple  Google  Cisco  Dell  ]
+
+ 
+Please choose one of the below operation or Enter as :
+P ---> for Print state
+R ---> for Read Data
+W ---> for Write Data
+E ---> for Exit
+Choose one: 
+p
+
+Current Data in Memory: [  Apple  Google  Cisco  Dell  ]
+
+ Processor 1: 
+Initially No Data in Processor. State: INVALID.
+
+ Processor 2: 
+Initially No Data in Processor. State: INVALID.
+
+ Processor 3: 
+Initially No Data in Processor. State: INVALID.
+
+ Processor 4: 
+Initially No Data in Processor. State: INVALID.
+
+ 
+Please choose one of the below operation or Enter as :
+P ---> for Print state
+R ---> for Read Data
+W ---> for Write Data
+E ---> for Exit
+Choose one: 
+r
+Choose Processor value should be between 1 to 4
+1
+Choose Memory Location value should be between 1 to 4: 
+1
+ReadMiss Request is sent to the bus and then state is changed to SHARED from INVALID
+Data : Apple
+
+ 
+Please choose one of the below operation or Enter as :
+P ---> for Print state
+R ---> for Read Data
+W ---> for Write Data
+E ---> for Exit
+Choose one: 
+p
+
+Current Data in Memory: [  Apple  Google  Cisco  Dell  ]
+
+ Processor 1: 
+Data in the processor:[  Apple  Google  Cisco  Dell  ]
+State: SHARED
+
+ Processor 2: 
+Initially No Data in Processor. State: INVALID.
+
+ Processor 3: 
+Initially No Data in Processor. State: INVALID.
+
+ Processor 4: 
+Initially No Data in Processor. State: INVALID.
+
+ 
+Please choose one of the below operation or Enter as :
+P ---> for Print state
+R ---> for Read Data
+W ---> for Write Data
+E ---> for Exit
+Choose one: 
+w
+Choose Processor value should be between 1 to 4 
+2
+Choose Memory Location value should be between 1 to 4:
+3
+Please enter new value here: 
+3456
+Data not found in cache state is changed from INVALID to MODIFIED .
+New Data: 3456
+
+ 
+Please choose one of the below operation or Enter as :
+P ---> for Print state
+R ---> for Read Data
+W ---> for Write Data
+E ---> for Exit
+Choose one: 
+p
+
+Current Data in Memory: [  Apple  Google  3456  Dell  ]
+
+ Processor 1: 
+State: INVALID
+
+ Processor 2: 
+Data in the processor:[  Apple  Google  3456  Dell  ]
+State: MODIFIED
+
+ Processor 3: 
+Initially No Data in Processor. State: INVALID.
+
+ Processor 4: 
+Initially No Data in Processor. State: INVALID.
+
+ 
+Please choose one of the below operation or Enter as :
+P ---> for Print state
+R ---> for Read Data
+W ---> for Write Data
+E ---> for Exit
+Choose one: 
+r
+Choose Processor value should be between 1 to 4
+4
+Choose Memory Location value should be between 1 to 4: 
+4
+ReadMiss Request is sent to the bus and then state is changed to SHARED from INVALID
+Data : Dell
+
+ 
+Please choose one of the below operation or Enter as :
+P ---> for Print state
+R ---> for Read Data
+W ---> for Write Data
+E ---> for Exit
+Choose one: 
+p
+
+Current Data in Memory: [  Apple  Google  3456  Dell  ]
+
+ Processor 1: 
+State: INVALID
+
+ Processor 2: 
+Data in the processor:[  Apple  Google  3456  Dell  ]
+State: SHARED
+
+ Processor 3: 
+Initially No Data in Processor. State: INVALID.
+
+ Processor 4: 
+Data in the processor:[  Apple  Google  3456  Dell  ]
+State: SHARED
+
+ 
+Please choose one of the below operation or Enter as :
+P ---> for Print state
+R ---> for Read Data
+W ---> for Write Data
+E ---> for Exit
+Choose one: 
+e
+Exiting the Protocol
+State Machine terminated!!!
